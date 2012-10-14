@@ -1,10 +1,124 @@
 @import 'mixins'
 @import 'normalize'
+@import 'typography'
+
+$credit-photo-width: 120px
+$credit-photo-height: 120px
 
 $color-text: #fff
 $color-highlight: #2baee1
 $color-lowlight: #0e5773
 
+$layout-offset-top: 200px
+
 body
   color: $color-text
   background: $color-lowlight
+  padding: $layout-offset-top 0
+  font-family: 'Open Sans', sans-serif
+
+h1
+  font-family: 'League Gothic'
+  font-size: 5em
+  line-height: 1.4em
+  text-align: center
+
+  span
+    display: block
+
+    &.top
+      color: $color-highlight
+
+      em
+        border-bottom-color: $color-highlight
+
+  em
+    border-bottom: 10px solid #fff
+
+h2, h3, h4, h5, h6
+  padding-top: $layout-offset-top / 2
+  font-family: 'League Gothic'
+
+h2
+  font-size: 4em
+
+h3
+  padding: 10px 0 20px
+  font-size: 1.5em
+  text-transform: uppercase
+  color: $color-highlight
+
+h4
+  font-size: 3em
+
+h5
+  font-size: 2.5em
+
+h6
+  font-size: 2em
+
+ul
+  list-style: disc outside none
+
+ol
+  list-style: decimal outside none
+
+ul, ol
+  padding: 0
+  line-height: 1.8em
+
+p
+  margin: 15px 0
+  line-height: 1.8em
+
+a
+  color: $color-highlight
+  text-decoration: none
+  border-bottom: 1px $color-highlight dashed
+  &:visited
+    color: $color-highlight
+  &:hover
+    color: $color-text
+    border-bottom: 1px $color-text solid
+
+blockquote
+  margin: $layout-offset-top / 4 0
+  padding-left: 40px
+  border-left: 5px solid $color-highlight
+
+  p
+    margin-top: 0
+    font-size: 2em
+    line-height: 1.4em
+
+  h1, h2, h3, h4, h5, h6
+    padding-bottom: 0
+
+.ss-icon
+  float: right
+
+.wrapper
+  width: 600px
+  margin: 0 auto
+
+.credit
+  margin: $layout-offset-top / 2 0
+  text-align: center
+
+  a.charlie
+    @extend .ir
+    display: block
+    width: $credit-photo-width
+    height: $credit-photo-height
+    background: url(/images/im-charlie.png) 50% 50% no-repeat
+    +background-size(100% 100%)
+    margin: 0 auto
+    +border-radius(100px)
+    +box-shadow(0 0 0 0 $color-highlight)
+    +transition-duration(0.3s)
+    +transition-property(all)
+    border: 5px solid $color-lowlight
+
+    &:hover
+      +box-shadow(0 0 50px 0 $color-highlight)
+      border: 5px solid $color-text

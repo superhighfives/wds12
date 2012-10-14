@@ -15,17 +15,29 @@
     %meta{:content => "", :property => "og:site_name"}
     %meta{:content => "", :property => "fb:admins"}
 
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,700", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/stylesheets/application.css", :rel => "stylesheet", :type => "text/css"}
     %script{:src => "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"}
   %body  
     .header
       .wrapper
         %h1
-          %span You Are A Developer,
-          %span The Internet Is Your Friend.
+          %span.top
+            You are a 
+            %em developer,
+          %span.bottom
+            the Internet is your 
+            %em friend.
     
     .content
       .wrapper
+
+        .credit
+          %a.charlie{href: 'http://charliegleason.com/', title: 'Charlie Gleason getting eaten really slowly by a tree'} Charlie Gleason
+          %p
+            with your friend
+            %strong Charlie Gleason
+
         =yield
 
     .footer

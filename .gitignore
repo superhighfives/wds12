@@ -16,3 +16,8 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+# Project specific
+.sass-cache
+public/fonts/*
+public/js/ss-symbolicons.js
