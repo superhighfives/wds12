@@ -49,10 +49,15 @@ h3
   color: $color-highlight
 
 h4
-  font-size: 3em
+  font-size: 2em
+  padding: 10px 0 0
 
 h5
-  font-size: 2.5em
+  padding: 5px 0 0
+  font-size: 1.5em
+  a
+    text-transform: uppercase
+    color: $color-highlight
 
 h6
   font-size: 2em
@@ -71,6 +76,21 @@ p
   margin: 15px 0
   line-height: 1.8em
 
+img
+  display: block
+  margin: 30px 0
+  width: 600px
+  height: auto
+  +box-shadow(0 0 15px 0 rgba(#000, 0.5))
+
+figure
+  margin-bottom: 30px
+  img
+    margin-bottom: 0
+  figcaption
+    background: darken($color-lowlight, 3%)
+    padding: 20px
+
 a
   color: $color-highlight
   text-decoration: none
@@ -81,11 +101,12 @@ a
     color: $color-text
     border-bottom: 1px $color-text solid
 
-blockquote
-  margin: $layout-offset-top / 4 0
+blockquote, aside
   padding-left: 40px
   border-left: 5px solid $color-highlight
 
+blockquote
+  margin: $layout-offset-top / 4 0
   p
     margin-top: 0
     font-size: 2em
@@ -93,6 +114,9 @@ blockquote
 
   h1, h2, h3, h4, h5, h6
     padding-bottom: 0
+
+aside
+  margin: $layout-offset-top / 8 0
 
 .ss-icon
   float: right
@@ -122,3 +146,10 @@ blockquote
     &:hover
       +box-shadow(0 0 50px 0 $color-highlight)
       border: 5px solid $color-text
+
+pre
+  border-color: #333
+  font-size: 14px
+  padding: 20px
+  code
+    line-height: 2em
