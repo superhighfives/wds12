@@ -1,5 +1,3 @@
-require 'rubygems'
-
 # app.rb
 require 'compass'
 require 'sinatra'

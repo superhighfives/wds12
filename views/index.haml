@@ -255,14 +255,17 @@
 
 %pre
   %code{data: {:language => 'shell', :line => 1}}
+    \ # Make a new directory and jump into it
+    \ > mkdir ~/myapp && cd ~/myapp
+
     \ # Grab a copy of Sinatra Boilerplate
-    \ > git clone git@github.com:superhighfives/sinatra-boilerplate.git
+    \ > git clone git@github.com:superhighfives/sinatra-boilerplate.git .
 
-    \ # Install the appropriate Ruby gems
-    \ > bundle install
+    \ # Install the appropriate Ruby gems (bundle means bundle install)
+    \ > bundle
 
-    \ # Start the server, accessible at http://0.0.0.0:4567
-    \ > ruby app.rb
+    \ # Start the server, accessible at http://0.0.0.0:5000
+    \ > foreman start
 
 :markdown
 
@@ -273,7 +276,8 @@
     \ # Remove the existing origin (otherwise you’re pushing to me)
     \ > git remote rm origin
 
-    \ # Sign up for a Github account, then add it to your project
+    \ # Sign up for a Github account
+    \ # make a repo and add it to your project
     \ > git remote add origin git@github.com:username/app_name.git
 
     \ # You may need to set up SSH keys on your machine first, but 
