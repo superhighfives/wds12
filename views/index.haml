@@ -225,7 +225,10 @@
 
   The one thing you will almost always have in a film is people. Human skin runs from pale pinkish yellow to dark brown, all of which are shades of orange. The color that contrasts best with orange is blue.
 
-  ![The Avengers poster, which is very blue and very orange.](/images/im-theavengers.jpg)
+  <figure>
+    ![The Avengers poster, which is very blue and very orange.](/images/im-theavengers.jpg)
+    <figcaption>**Above:** The Avengers poster, which is very blue and very orange.</figcaption>
+  </figure>
 
   **See what I mean?** [Into The Abyss](http://theabyssgazes.blogspot.com.au/2010/03/teal-and-orange-hollywood-please-stop.html) has a brilliant article on it, showing a bunch of examples and references.
 
@@ -286,20 +289,41 @@
 
 %pre
   %code{data: {:language => 'shell', :line => 1}}
-    \ # Sign up for a Heroku account, then install the gem
-    \ > gem install heroku
+    \ # Once you’ve installed the Heroku toolbelt, log in
+    \ > heroku login
+    \ > Enter your Heroku credentials.
+    \ # Email:
+    \ > adam@example.com
+    \ # Password:
+    \ > ••••••••
 
-    \ # Add your SSH keys
+    \ # If you haven’t set up keys, Heroku will help you out. For example:
+    \ # Could not find an existing public key.
+    \ > Would you like to generate one? [Yn]
+    \ # Generating new SSH public key.
+    \ # Uploading ssh public key /Users/you/.ssh/id_rsa.pub
+
+    \ # If for some reason this doesn't occur, you can manually add the keys
     \ > heroku keys:add
 
-    \ # Make a new Heroku stack
-    \ > heroku create --stack cedar
+:markdown
 
-    \ # Deploy to Heroku!
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
+
+%pre
+  %code{data: {:language => 'shell', :line => 1}}
+    \ > cd ~/myapp
+    \ > heroku create
+    \ # Creating temp... done, stack is cedar
+    \ # http://temp.herokuapp.com/ | git@heroku.com:temp.git
+    \ # Git remote heroku added
+
+    \ # Push the site up
     \ > git push heroku master
 
     \ # Visit the site!
     \ > heroku open
+
 
 :markdown
 
@@ -318,22 +342,22 @@
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
 
-  #### 1. Plan ahead
+  #### <span class="ss-icon">list</span> 1. Plan ahead
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
 
-  #### 2. Design to build
+  #### <span class="ss-icon">list</span> 2. Design to build
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
 
   > "If we have data, let’s look at data. If all we have are opinions, let’s go with mine."
   > ### Jim Barksdale 
 
-  #### 3. Less is more
+  #### <span class="ss-icon">list</span> 3. Less is more
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
 
-  #### 4. Ask more questions
+  #### <span class="ss-icon">list</span> 4. Ask more questions
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
 
