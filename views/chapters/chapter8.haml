@@ -1,0 +1,100 @@
+:markdown
+
+  ## <span class="ss-icon">pencil</span> Making something awesome
+  ### Chapter 8
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
+
+%pre
+  %code{data: {:language => 'shell', :line => 1}}
+    \ # Install Brew (it is so, so awesome)
+    \ > ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+
+    \ # Install Git
+    \ > brew install git
+
+:markdown
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
+
+%pre
+  %code{data: {:language => 'shell', :line => 1}}
+    \ # Make a new directory and jump into it
+    \ > mkdir ~/myapp && cd ~/myapp
+
+    \ # Grab a copy of Sinatra Boilerplate
+    \ > git clone git@github.com:superhighfives/sinatra-boilerplate.git .
+
+    \ # Install the appropriate Ruby gems (bundle means bundle install)
+    \ > bundle
+
+    \ # Start the server, accessible at http://0.0.0.0:5000
+    \ > foreman start
+
+:markdown
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
+
+%pre
+  %code{data: {:language => 'shell', :line => 1}}
+    \ # Sign up for a Github account
+    \ # make a repo and add it to your project
+    \ > git remote set-url origin git@github.com:username/app_name.git
+
+    \ # You may need to set up SSH keys on your machine first, but 
+    \ # Github has a great tutorial on making them at
+    \ # https://help.github.com/articles/generating-ssh-keys
+
+    \ # Push to Git, and then celebrate
+    \ > git push
+
+:markdown
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
+
+%figure
+  %img{title: 'The Heroku Toolbelt home page.', src:'/images/im-heroku.jpg'}
+  %figcaption
+    %strong Above:
+    The Heroku Toolbelt home page.
+
+%pre
+  %code{data: {:language => 'shell', :line => 1}}
+    \ # Once you’ve installed the Heroku toolbelt, log in
+    \ > heroku login
+    \ # Enter your Heroku credentials.
+    \ # Email:
+    \ > adam@example.com
+    \ # Password:
+    \ > ••••••••
+
+    \ # If you haven’t set up keys, Heroku will help you out. For example:
+    \ # Could not find an existing public key.
+    \ > Would you like to generate one? [Yn]
+    \ # Generating new SSH public key.
+    \ # Uploading ssh public key /Users/you/.ssh/id_rsa.pub
+
+    \ # If for some reason this doesn't occur, you can add them manually
+    \ > heroku keys:add
+
+:markdown
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
+
+%pre
+  %code{data: {:language => 'shell', :line => 1}}
+    \ > heroku create
+    \ # Creating temp... done, stack is cedar
+    \ # http://temp.herokuapp.com/ | git@heroku.com:temp.git
+    \ # Git remote heroku added
+
+    \ # Deploy the app
+    \ > git push heroku master
+
+    \ # Celebrate!
+    \ > heroku open
+
+
+:markdown
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum. And now your site should be live?!

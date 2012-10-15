@@ -1,373 +1,41 @@
-:markdown
+.pitch
+  = haml(:'chapters/pitch')
 
-  Hello. You've probably just seen my talk at [Web Directions South 2012.](http://south12.webdirections.org/) If not, that's cool. Perhaps someone tweeted it? Or you're my Mum (Hey Mum!) and I asked you to check it out?
+#skip-to-toc.toc
+  = haml(:'chapters/toc')
 
-  It was called **You Are A Developer, The Internet Is Your Friend**. To give you an idea of what it was about, this is the blurb:
+#skip-to-introduction
+  = haml(:'chapters/introduction')
 
-%aside
-  :markdown
+#skip-to-chapter-1
+  = haml(:'chapters/chapter1')
 
-    **The internet is getting really, really big and developing it means knowing more than ever before.** Do not fear: from programming languages to social networks, application frameworks to responsive design, the ever growing bucket of buzzwords that threaten our collective sanity are far less troublesome than they initially appear.
+#skip-to-chapter-2
+  = haml(:'chapters/chapter2')
 
-    So how do designers take the plunge? What are the tricks that everyone seems to know but no one seems to tell you? And do developers really work in text editors?
+#skip-to-chapter-3
+  = haml(:'chapters/chapter3')
 
-    As a designer turned developer, quasi-nerd turned internet ninja, and now buzzword aficionado, Charlie Gleason will tell you the secrets to how he learnt to stop worrying and love the code. With helpful tricks, tips, and a tragic overuse of puns, he wants you to be as amped about the web as he is.
+#skip-to-chapter-4
+  = haml(:'chapters/chapter4')
 
-:markdown
+#skip-to-chapter-5
+  = haml(:'chapters/chapter5')
 
-  Below are a series of notes, links, references and general ephemera for anyone who is enthusiastic about such things. **Let's venture on, shall we?**
+#skip-to-chapter-6
+  = haml(:'chapters/chapter6')
 
-  ## <span class="ss-icon">list</span> A list of chapters
-  ### Table of contents
+#skip-to-chapter-7
+  = haml(:'chapters/chapter7')
 
-  1. [Hello friends](#hello-friends)
-  2. [Hello other friends](#hello-other-friends)
-  3. [Hello more friends](#etc)
+#skip-to-chapter-8
+  = haml(:'chapters/chapter8')
 
-:markdown
+#skip-to-chapter-9
+  = haml(:'chapters/chapter9')
 
-  ## <span class="ss-icon">like</span> Hello friends
-  ### Introduction
+#skip-to-chapter-10
+  = haml(:'chapters/chapter10')
 
-  **With a title that looks as though it was plucked directly from a heavily discounted self help guide, you may be wondering who this is aimed at.** Essentially, me. It's a big list of things I wish someone had told me when I was starting out as a designer. But all are welcome, and hopefully you'll get something out of it regardless.
-
-  In my opening remarks, I mentioned [a to do list written by a seven year old.](http://www.flickr.com/photos/rog2bark/3437630552/ "'kid to do list, list, Be happy and go home' on Flickr")
-
-  <figure>
-    ![A to-do list by a seven year old.](/images/im-todolist.jpg)
-    <figcaption>**Above:** A to-do list by a seven year old.</figcaption>
-  </figure>
-
-  **It's probably my favourite to do list ever**, because the end goal is simply to be happy and go home. I opened the talk with it because that, to me, is what web design and development should be about - doing something you love. So if at any point while trying out these new toys, tricks, gadgets and gizmos you feel frustrated or annoyed, just walk away for a bit. Get some fresh air. **Hug a puppy.** It'll help.
-
-  Such a great to do list. Seven year olds are pretty much the best.
-
-  [I am Charlie Gleason](http://charliegleason.com/ "Charlie Gleason"). I love design, development, photography, beer, riding a bicycle and rock climbing. I used to live in London, and I almost lived in Perth, but I grew up in Melbourne. I've been a lead developer and technical lead at a big traditional ad agency, and a senior designer at another, and now I'm a designer / developer at [Goodfilms](http://goodfil.ms), which is a rad social film site. I spend the rest of my time freelancing, listening to vinyls and playing in a band called [Brightly](http://wearebrightly.com/).
-
-  **Also, I'm on twitter at [@superhighfives](http://twitter.com/superhighfives/ "@superhighfives"), if you're so inclined.**
-  
-  ## <span class="ss-icon">heart</span> Something Else
-  ### Chapter 2
-
-  **In 2006 I started a site called [Post Office Box 16.](http://web.archive.org/web/20070114133224/http://www.postofficebox16.com/ "Post Office Box 16 on the Wayback Machine.")** It was inspired by [Postsecret](http://postsecret.com/), a website dedicated to displaying anonymously submitted postcards for consumption by the wider public. Sometimes funny, sometimes heartbreaking, and sometimes wildly disturbing, PostSecret hit a nerve, and I realised there was something really nice about the idea of people sharing tangible things through a digital medium.
-
-  So I decided to make a website that would allow people to share postcard sized pieces of art. You print one out, draw / collage / paint / print / etc on it, and then you send it to PO Box 16. I would then scan it in, and send you someone else's. I got about 100 submissions, one of which was done by my Mum.
-
-  <figure>
-    ![Post Office Box 16 template postcard.](/images/im-postcard.gif)
-    <figcaption>**Above:** The Post Office Box 16 template.</figcaption>
-  </figure>
-
-  I designed it, from the logo to website to the postcards themselves. But I had never felt such an overwhelming sense of frustration. Four years of "multimedia design" had taught me how to use FTP, and I vaguely understood .html, but I had foolishly designed a contact form into the site.
-
-  So I had to learn how to code.
-
-  > "It's better to be safe than sorry" is such crap. You know what's better than being safe? Being awesome."
-  > ### Jeff Atwood (Co-founder of Stack Overflow and Stack Exchange)
-
-
-  ## <span class="ss-icon">frame</span> Setting up an environment
-  ### Chapter X
-
-  A description of the importance of setting up a good environment. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### HTML5 Boilerplate
-  ##### [html5boilerplate.com](http://html5boilerplate.com)
-
-  <figure>
-    ![HTML5 Boilerplater home page.](/images/im-html5boilerplate.jpg)
-    <figcaption>**Above:** HTML5 Boilerplater home page.</figcaption>
-  </figure>
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### Transmit
-  ##### [panic.com/transmit](http://panic.com/transmit/)
-
-  <figure>
-    ![Panic Transmit home page.](/images/im-transmit.jpg)
-    <figcaption>**Above:** The Panic Transmit home page.</figcaption>
-  </figure>
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### MAMP
-  ##### [mamp.info](http://mamp.info/)
-
-  <figure>
-    ![MAMP home page.](/images/im-mamp.jpg)
-    <figcaption>**Above:** The MAMP home page.</figcaption>
-  </figure>
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### Sequel Pro
-  ##### [sequelpro.com](http://sequelpro.com/)
-
-  <figure>
-    ![Sequel Pro home page.](/images/im-sequelpro.jpg)
-    <figcaption>**Above:** The Sequel Pro home page.</figcaption>
-  </figure>
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### Sublime Text 2
-  ##### [sublimetext.com/2](http://sublimetext.com/2/)
-
-  <figure>
-    ![Sublime Text 2 home page.](/images/im-sublimetext2.jpg)
-    <figcaption>**Above:** The Sublime Text 2 home page.</figcaption>
-  </figure>
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### iTerm 2
-  ##### [iterm2.com](http://iterm2.com/)
-
-  <figure>
-    ![iTerm 2 home page.](/images/im-iterm2.jpg)
-    <figcaption>**Above:** The iTerm 2 home page.</figcaption>
-  </figure>
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### Anvil
-  ##### [anvilformac.com](http://anvilformac.com/)
-
-  <figure>
-    ![Anvil home page.](/images/im-anvil.jpg)
-    <figcaption>**Above:** The Anvil home page.</figcaption>
-  </figure>
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### Sinatra
-  ##### [sinatrarb.com](http://sinatrarb.com/)
-
-  <figure>
-    ![Sinatra home page.](/images/im-sinatra.jpg)
-    <figcaption>**Above:** The Sinatra home page.</figcaption>
-  </figure>
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### Homebrew
-  ##### [mxcl.github.com/homebrew](http://mxcl.github.com/homebrew/)
-
-  <figure>
-    ![Homebrew home page.](/images/im-homebrew.jpg)
-    <figcaption>**Above:** The Homebrew home page.</figcaption>
-  </figure>
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-
-
-  ## <span class="ss-icon">frame</span> How To Keep Friends
-  ### Chapter X
-
-  So, you start building something and it breaks. That will happen. You will be annoyed. It will not make sense. Internet Explorer 7 can seriously go die. All is, however, not lost.
-
-  Here we come to **Charlie's 6 things to remember:**
-
-  #### 1. Walk away.
-
-  Goodfilms, the start up I work at, has an indoor swing. Whenever we get angry, or frustrated, or a start crying, we can walk away from our desks and have a swing. I encourage you to try being angry on a swing. It's like the fat free equivalent of eating a tub of ice cream. It is distilled childhood joy. It is the literally the best. And before you know it, everything will be clarified by the space you've given your aching brain.
-
-  Alternatively, if you don't have an indoor swing because you work for a company that isn't as enthusiastic about play equipment within an office environment (and who can blame them?) try working on something else for a bit. Or have a coffee. Or eat a hamburger. Or walk around the block. Or google lolcats.
-
-  #### 2. Google it.
-
-  <figure>
-    ![The google.com home page.](/images/im-google.jpg)
-    <figcaption>**Above:** The [google.com](http://google.com/) homepage. Which you should probably know?</figcaption>
-  </figure>
-
-  90% of questions have already been asked and answered. It's a comforting statistic, especially given that I only just made it up. You can find a host of information using your trusty search engine, likely with a bunch of people going through the pain and frustration you are currently going through.
-
-  #### 3. Ask a friend.
-
-  So you don't find anything online. Ho hum! If you started attending some meet ups you might have gotten someone's Twitter handle. Why not take this opportunity to ask them?
-
-  [Your new friend](http://twitter.com/superhighfives/) will most likely tell you to Google it. Thanks for nothing, new friend. But they have a point - there are places you can ask for exactly this kind of advice, in an environment for likeminded people. So maybe avoid asking a friend, unless you know it's a topic they're particularly passionate about. Like me and the any musical ever. And that includes Chicago and the High School Musicals. I do not discriminate.
-
-  #### 4. Ask Stack Overflow
-
-  <figure>
-    ![The stackoverflow.com home page.](/images/im-stackoverflow.jpg)
-    <figcaption>**Above:** The [stackoverflow.com](http://stackoverflow.com/) homepage.</figcaption>
-  </figure>
-
-  [Stack Overflow](http://stackoverflow.com/) is a wild way to get help. It's basically a big Q&A on making the internet, where people are rewarded for asking good questions and giving good answers. It's gamification of being a rad human, and I've had some pretty obscure questions answered in record time. From Backbone.js incorrectly managing models when the ID of the item is an object, to the best way to architect a JavaScript application, to errors I was getting when mashing a bunch of different JavaScript libraries together. The last one was answered by the dude WHO WROTE ONE OF THE LIBRARIES. He's, like, internet famous. Wowzers.
-
-  One of the things about asking questions is asking the right ones. With great power comes great responsibility and all that. For example, just saying "OH HAI THIS WEBPAGE IS BROKEN WHY?" is probably the quickest way to get nowhere. Ask sensible, detailed questions with code examples so people can recreate the issue you're having, and loads of people will do their best to help. It's like communism but without any of the awkwardness of having to share back!
-
-  #### 5. Find a mentor.
-
-  There are lots of people who are experts in very specific areas of web development, and I've yet to find one who couldn't be swayed by cake. So that is always a good fallback.
-
-  #### 6. IRC.
-
-  IRC, which stands for Internet Relay Chat, is a realtime chat messaging service. There are rooms on almost every topic, from Ruby to JavaScript to jQuery. It's kind of a hunting ground for super nerds though, and every time I've ever asked a (in my mind) reasonable, well considered question on IRC I was either:
-
-  * Mocked
-  * Flamed
-  * Ignored
-
-  So maybe leave IRC off the list? Unless it works for you. In which case, good for you, and please don't mock, flame or ignore me after this talk for not flying the IRC flag. I have cripplingly low self esteem, and you seem pretty angry.
-
-
-
-  ## <span class="ss-icon">frame</span> A Minor Digression
-  ### Chapter X
-
-  Basic complementary color theory states that when two contrasting colors are put together, they "pop," so the natural technique is to color films to have a strong, contrasting palette.
-
-  The one thing you will almost always have in a film is people. Human skin runs from pale pinkish yellow to dark brown, all of which are shades of orange. The color that contrasts best with orange is blue.
-
-  <figure>
-    ![The Avengers poster, which is very blue and very orange.](/images/im-theavengers.jpg)
-    <figcaption>**Above:** The Avengers poster, which is very blue and very orange.</figcaption>
-  </figure>
-
-  **See what I mean?** [Into The Abyss](http://theabyssgazes.blogspot.com.au/2010/03/teal-and-orange-hollywood-please-stop.html) has a brilliant article on it, showing a bunch of examples and references.
-
-  Also, sorry for ruining movies for you for the rest of time.
-
-
-
-  ## <span class="ss-icon">frame</span> Making something awesome
-  ### Chapter 8
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-%pre
-  %code{data: {:language => 'shell', :line => 1}}
-    \ # Install Brew (it is so, so awesome)
-    \ > ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-
-    \ # Install Git
-    \ > brew install git
-
-:markdown
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-%pre
-  %code{data: {:language => 'shell', :line => 1}}
-    \ # Make a new directory and jump into it
-    \ > mkdir ~/myapp && cd ~/myapp
-
-    \ # Grab a copy of Sinatra Boilerplate
-    \ > git clone git@github.com:superhighfives/sinatra-boilerplate.git .
-
-    \ # Install the appropriate Ruby gems (bundle means bundle install)
-    \ > bundle
-
-    \ # Start the server, accessible at http://0.0.0.0:5000
-    \ > foreman start
-
-:markdown
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-%pre
-  %code{data: {:language => 'shell', :line => 1}}
-    \ # Remove the existing origin (otherwise you’re pushing to me)
-    \ > git remote rm origin
-
-    \ # Sign up for a Github account
-    \ # make a repo and add it to your project
-    \ > git remote add origin git@github.com:username/app_name.git
-
-    \ # You may need to set up SSH keys on your machine first, but 
-    \ # Github has a great tutorial on making them at
-    \ # https://help.github.com/articles/generating-ssh-keys
-
-    \ # Push to Git, and then celebrate
-    \ > git push
-
-:markdown
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-%pre
-  %code{data: {:language => 'shell', :line => 1}}
-    \ # Once you’ve installed the Heroku toolbelt, log in
-    \ > heroku login
-    \ > Enter your Heroku credentials.
-    \ # Email:
-    \ > adam@example.com
-    \ # Password:
-    \ > ••••••••
-
-    \ # If you haven’t set up keys, Heroku will help you out. For example:
-    \ # Could not find an existing public key.
-    \ > Would you like to generate one? [Yn]
-    \ # Generating new SSH public key.
-    \ # Uploading ssh public key /Users/you/.ssh/id_rsa.pub
-
-    \ # If for some reason this doesn't occur, you can manually add the keys
-    \ > heroku keys:add
-
-:markdown
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-%pre
-  %code{data: {:language => 'shell', :line => 1}}
-    \ > cd ~/myapp
-    \ > heroku create
-    \ # Creating temp... done, stack is cedar
-    \ # http://temp.herokuapp.com/ | git@heroku.com:temp.git
-    \ # Git remote heroku added
-
-    \ # Push the site up
-    \ > git push heroku master
-
-    \ # Visit the site!
-    \ > heroku open
-
-
-:markdown
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum. And now your site should be live?!
-
-
-
-  ## <span class="ss-icon">heart</span> We need you
-  ### Chapter 9
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-
-  ## <span class="ss-icon">exclamationchat</span> Four things to remember
-  ### Chapter 10
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### <span class="ss-icon">list</span> 1. Plan ahead
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### <span class="ss-icon">list</span> 2. Design to build
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  > "If we have data, let’s look at data. If all we have are opinions, let’s go with mine."
-  > ### Jim Barksdale 
-
-  #### <span class="ss-icon">list</span> 3. Less is more
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  #### <span class="ss-icon">list</span> 4. Ask more questions
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-  ## <span class="ss-icon">like</span> Epilogue
-  ### Conclusion
-
-  **In conclusion, thank you.**
-
-  Again, [I am Charlie Gleason](http://charliegleason.com/ "Charlie Gleason"). If you made it to my talk, thank you for coming. If you have any questions, I am [@superhighfives](http://twitter.com/superhighfives/ "@superhighfives"). If you'd like to make corrections or changes to this site, it's up on [Github](http://github.com/superhighfives/wds12 "WDS12 on Github") so make a pull request and I'll add it in. As long as it isn't my face with funny eyebrows drawn on it.
+#skip-to-epilogue
+  = haml(:'chapters/epilogue')
