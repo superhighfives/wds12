@@ -3,6 +3,96 @@
   ## <span class="ss-icon">pencil</span> Making something awesome
   ### Chapter 8
 
+  Right. So, let’s make something awesome. I’m going to show you how to start developing a [Sinatra](http://sinatrarb.com) based app, using [HAML](http://haml.info/) and [SASS](http://sass-lang.com/), and how to deploy it straight to [Heroku](http://heroku.com/). That way we’ll be able to start making swell stuff, and have it live on the web straight away, with the minimum of hassle.
+  
+  **I should mention, this is a walkthrough for a UNIX based system. Sorry Windows people.**
+
+  In anticipation of coming here, I built the [Sinatra Boilerplate](http://superhighfives.github.com/sinatra-boilerplate/).
+
+  #### Sinatra Boilerplate
+  ##### [superhighfives.github.com/sinatra-boilerplate](http://superhighfives.github.com/sinatra-boilerplate/)
+
+  <a href='http://superhighfives.github.com/sinatra-boilerplate/'>
+    <figure>
+      <img src='/images/im-sinatraboilerplate.jpg' title="The Sinatra Boilerplate." />
+      <figcaption>
+        <strong>Above:</strong>
+        The Sinatra Boilerplate.
+      </figcaption>
+    </figure>
+  </a>
+
+  Essentially it’s a boilerplate for rapidly developing [Sinatra](http://sinatrarb.com) based apps. Remember how I mentioned we should break some stuff? **This is the playground in which we will break things**. Which sounds dark, right?
+
+  #### iTerm 2
+  ##### [iterm2.com](http://iterm2.com/)
+
+  <figure>
+    <img src='/images/im-iterm2.jpg' title='iTerm 2 home page.' />
+    <figcaption>
+      <strong>Above:</strong>
+      The iTerm 2 home page.
+    </figcaption>
+  </figure>
+
+  First off, we need our trusty command line tool. I like [iTerm2](http://iterm2.com/) but Terminal, which is located in your the **Utilities** folder of your **Applications**, will do.
+
+  #### Sublime Text 2
+  ##### [sublimetext.com/2](http://sublimetext.com/2/)
+
+  <figure>
+    <img src='/images/im-sublimetext2.jpg' title='Sublime Text 2 home page.' />
+    <figcaption>
+      <strong>Above:</strong>
+      The Sublime Text 2 home page.
+    </figcaption>
+  </figure>
+
+  We'll also need a text editor. I like [Sublime Text 2](http://sublimetext.com/2/).
+
+  #### Heroku Toolbelt
+  ##### [toolbelt.heroku.com](http://toolbelt.heroku.com/)
+
+  <figure>
+    <img src='/images/im-heroku.jpg' title='Heroku Toolbelt home page.' />
+    <figcaption>
+      <strong>Above:</strong>
+      The Heroku Toolbelt home page.
+    </figcaption>
+  </figure>
+
+  And finally, the [Heroku Toolbelt](http://toolbelt.heroku.com/). It'll give you access to these three rad tools:
+
+  - [Heroku](http://github.com/heroku/heroku) (for Heroku on the command line)
+  - [Git](http://code.google.com/p/git-osx-installer) (for version control)
+  - [Foreman](http://github.com/ddollar/foreman) (for running Sinatra locally)
+
+  #### <span class="ss-icon">like</span> So, let's get started
+  ##### (Everyone, to the command line!)
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
+
+%pre
+  %code{data: {:language => 'shell', :line => 1}}
+    \ # Once you’ve installed the Heroku toolbelt, log in
+    \ > heroku login
+    \ # Enter your Heroku credentials.
+    \ # Email:
+    \ > adam@example.com
+    \ # Password:
+    \ > ••••••••
+
+    \ # If you haven’t set up keys, Heroku will help you out. For example:
+    \ # Could not find an existing public key.
+    \ > Would you like to generate one? [Yn]
+    \ # Generating new SSH public key.
+    \ # Uploading ssh public key /Users/you/.ssh/id_rsa.pub
+
+    \ # If for some reason this doesn't occur, you can add them manually
+    \ > heroku keys:add
+
+:markdown
+
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
 
 %pre
@@ -47,35 +137,6 @@
 
     \ # Push to Git, and then celebrate
     \ > git push
-
-:markdown
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin magna. Sed ut dolor nunc. Integer mi quam, condimentum sit amet laoreet sed, eleifend eu lorem. Cras ipsum sapien, bibendum nec suscipit sit amet, luctus sit amet enim. Phasellus interdum quam eu est sodales sed tempor lorem rutrum.
-
-%figure
-  %img{title: 'The Heroku Toolbelt home page.', src:'/images/im-heroku.jpg'}
-  %figcaption
-    %strong Above:
-    The Heroku Toolbelt home page.
-
-%pre
-  %code{data: {:language => 'shell', :line => 1}}
-    \ # Once you’ve installed the Heroku toolbelt, log in
-    \ > heroku login
-    \ # Enter your Heroku credentials.
-    \ # Email:
-    \ > adam@example.com
-    \ # Password:
-    \ > ••••••••
-
-    \ # If you haven’t set up keys, Heroku will help you out. For example:
-    \ # Could not find an existing public key.
-    \ > Would you like to generate one? [Yn]
-    \ # Generating new SSH public key.
-    \ # Uploading ssh public key /Users/you/.ssh/id_rsa.pub
-
-    \ # If for some reason this doesn't occur, you can add them manually
-    \ > heroku keys:add
 
 :markdown
 
