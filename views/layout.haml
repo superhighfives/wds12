@@ -4,16 +4,16 @@
     %title= @title
     %meta{:name => "description", :content => "A collection of notes and references from Charlie Gleason's 2012 Web Directions talk, '#{@title}.'"}
     %meta{:name => "author", :content => "Charlie Gleason"}
-    -# %link{:href => "/images/favicon.ico", :rel => "shortcut icon"}
-    -# %link{:href => "/images/apple-touch-icon.png", :rel => "apple-touch-icon"}
+    %link{:href => "/images/favicon.ico", :rel => "shortcut icon"}
+    %link{:href => "/images/apple-touch-icon.png", :rel => "apple-touch-icon"}
 
     %meta{:content => "#{@title}", :property => "og:title"}
-    %meta{:content => "", :property => "og:type"}
-    %meta{:content => "", :property => "og:description"}
-    %meta{:content => "", :property => "og:url"}
+    %meta{:content => "website", :property => "og:type"}
+    %meta{:content => "This site is a series of notes, links, references and general ephemera from my talk at Web Directions South in October 2012.", :property => "og:description"}
+    %meta{:content => "http://wds12.charliegleason.com/", :property => "og:url"}
     %meta{:content => "", :property => "og:image"}
-    %meta{:content => "", :property => "og:site_name"}
-    %meta{:content => "", :property => "fb:admins"}
+    %meta{:content => "#{@title}", :property => "og:site_name"}
+    %meta{:content => "500678127", :property => "fb:admins"}
 
     %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,700", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/js/rainbow/themes/twilight.css", :rel => "stylesheet", :type => "text/css"}
